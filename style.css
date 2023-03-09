@@ -1,0 +1,127 @@
+@font-face {
+    font-family: odin-font;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: odin-font, 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url(/Users/christiancordero/Repos/Top-Form-Validation/luis-villasmil-ITFwHdPEED0-unsplash.jpg); */
+
+}
+
+.leftSide {
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(images/luis-villasmil-ITFwHdPEED0-unsplash-small.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.rightSide {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    background-color: lavender;
+}
+
+#d1 {
+    display: flex;
+    height: 23vh;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 2vw;
+    margin-bottom: 1vh;
+}
+
+#d2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: lightcyan;
+    height: 47vh;
+    width: 65vw;
+}
+
+.main-form-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-sections {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+#createAccForm {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputField {
+    padding: 12px;
+    width: 40%;
+    margin-left: 1vw;
+}
+
+input,
+select {
+    width: 200px;
+    height: 25px;
+    margin: 2px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid purple;
+    border-radius: 2px;
+    outline: none;
+}
+
+#text-TOS {
+    align-items: center;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+#d3 {
+    display: flex;
+    flex-direction: column; 
+    height: 30vh;
+    align-items: flex-start;
+}
+
+#createButton {
+    background-color: magenta;
+    font-size: x-large;
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 2vw;
+}
+
+#loginRedirect {
+    margin-top: 20px;
+    margin-left: 2vw;
+}
+
+
+
+
