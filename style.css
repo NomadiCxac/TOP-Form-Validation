@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: odin-font, 'Courier New', Courier, monospace;
+    font-family: Comic-sans;
 }
 
 .container {
@@ -22,11 +22,48 @@
 .leftSide {
     width: 35vw;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-between;
     background-image: url(images/luis-villasmil-ITFwHdPEED0-unsplash-small.jpg);
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+.leftHeader {
+    background-color: rgb(0, 0, 0, 0.6);
+    margin-top: 100px;
+}
+
+.leftHeaderBackground {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.brandLogo {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#brandName {
+    color: white;
+    font-family: odin-font, Comic-sans;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.leftFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.photoCredit {
+    position: sticky;
+    bottom: 0;
+    color: white;
 }
 
 .rightSide {
@@ -50,7 +87,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-color: lightcyan;
-    height: 47vh;
+    height: 50vh;
     width: 65vw;
 }
 
@@ -62,7 +99,6 @@
 .form-sections {
     display: flex;
     flex-direction: column;
-    margin-top: 3vh;
 }
 
 #createAccForm {    
@@ -76,6 +112,13 @@
     width: 40%;
     margin-left: 1vw;
 }
+
+#errorMessage {
+    font-size: x-small;
+    color: red;
+    width: 200px;
+}
+
 
 input,
 select {
@@ -94,16 +137,25 @@ select:focus {
     outline: none;
 }
 
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
 #text-TOS {
     align-items: center;
     margin-left: 1vw;
-    margin-top: 1vh;
+    margin-top: 1vh;    
+    margin-bottom: 2vh;
 }
 
 #d3 {
     display: flex;
     flex-direction: column; 
-    height: 30vh;
+    height: 27vh;
     align-items: flex-start;
 }
 

@@ -8,13 +8,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" async defer></script>
     </head>
     <body>
         <div class="container"> 
 
             <div class="leftSide">
-                <span>Photo by <a href="https://unsplash.com/fr/@villxsmil?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luis Villasmil</a> on <a href="https://unsplash.com/photos/ITFwHdPEED0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                </span>
+                <div class="leftHeader">
+                    <div class="leftHeaderBackground">
+                        <div class="brandLogo">
+                            <img src="images/odin-lined.png" alt="Odin Logo" height="150px" opacity="1"> <h1 id="brandName">ODIN</h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="leftFooter">
+                    <span class="photoCredit">Photo by <a href="https://unsplash.com/fr/@villxsmil?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luis Villasmil</a> on <a href="https://unsplash.com/photos/ITFwHdPEED0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </span>
+                </div>
             </div>
 
             <div class="rightSide">
@@ -28,21 +39,21 @@
                 </div>
 
                 <div id="d2">
-                    <h2 style="margin-left: 2vw; margin-top: 3vh;">Let's Do this!</h2>
+                    
                     <form id="createAccForm" method="" action="get">
-
+                        <h2 style="margin-left: 2vw; margin-top: 3vh;">Let's Do this!</h2>
                         <div class="main-form-section">
                             <div class="form-sections">
                                 <div class="inputField">
                                     <label for="username">Username:</label>
                                     <br>
-                                    <input type="text" id="username" name="username" placeholder="Enter Your Username"> 
+                                    <input type="text" id="username" name="username" placeholder="Enter Your Username" required> 
                                 </div>
             
                                 <div class="inputField">
                                     <label for="email">Email Address:</label>
                                     <br>
-                                    <input type="text" id="email" name="email" placeholder="Enter Your Email Address">    
+                                    <input type="text" id="email" name="email" placeholder="Enter Your Email Address" required>    
                                 </div>
         
                                 <div class="inputField">
@@ -74,13 +85,14 @@
                                 <div class="inputField">
                                     <label for="password">Password:</label>
                                     <br>
-                                    <input type="text" id="password" name="password" placeholder="Enter Your Password">                            
+                                    <input type="text" id="password" name="password" placeholder="Enter Your Password" required>
+                                    <p id="errorMessage"></p>                            
                                 </div>
             
                                 <div class="inputField">
-                                    <label for="password">Confirm Password</label>
+                                    <label for="confirmPassword">Confirm Password</label>
                                     <br>
-                                    <input type="text" id="password" name="password" placeholder="Confirm Your Password">
+                                    <input type="text" id="confirmPassword" name="confirmPassword" placeholder="Confirm Your Password" required>
                                 </div>
         
                                 <div class="inputField">
@@ -129,6 +141,6 @@
                 
             </div>
         
-        <script src="" async defer></script>
+
     </body>
 </html>
